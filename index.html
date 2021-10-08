@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerology</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1 class="title">Numerology Calculator</h1>
+    <div class="formm">
+        <h2 class="name">Enter your name:</h2>
+        <input type="text" id="name" name="name" placeholder="Nguyen Van A">
+        <br><br>
+    
+        <h2 class="dob">Enter your Date of Birth:</h2>
+        <input type="number" id="day" name="day" placeholder="day">
+        <input type="number" id="month" name="month" placeholder="month">
+        <input type="number" id="year" name="year" placeholder="year">
+        <br><br>
+        <!-- <input type="submit"> -->
+        <button type="button" class="btnn" name="button" onclick="Geeks()">
+            Submit
+        </button>
+        <br><br>
+
+        <div id="detail1" class="result"></div>
+        <div id="detail2" class="result"></div>
+        <div id="detail3" class="result"></div>
+        <div id="detail4" class="result"></div>
+    </div>
+
+    <div class="detail">
+        <div id="txtHint"></div>
+        <div id="expression"></div>
+        <div id="soul"></div>
+        <div id="personality"></div>
+        <div id="master"></div>
+    </div>
+
+    
+    
+    <script type = "text/javascript" src="js/action.js"></script>
+    <script type = "text/javascript" src="js/calculateName.js"></script>
+    <script type = "text/javascript" src="js/condition.js"></script>
+    <script type = "text/javascript" src="js/calculateDOB.js"></script>
+    <script type = "text/javascript" src="connect.js"></script>
+
+</body>
+</html>
