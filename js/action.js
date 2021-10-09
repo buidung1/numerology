@@ -50,7 +50,7 @@ function displayExpressionNumber(name) {
     else {
         message = "your Expression Number is: "+calculated;
     }
-    showExpression(reduceNumFinal(expressionNumber), "expression");
+    //showExpression(reduceNumFinal(expressionNumber), "expression");
     return message;
 }
 function displaySoulNumber(name) {
@@ -63,7 +63,7 @@ function displaySoulNumber(name) {
         message = "your Soul Number is: "+calculated;
     }
 
-    showExpression(reduceNumFinal(soulNumber), "soul");
+    //showExpression(reduceNumFinal(soulNumber), "soul");
     return message;
 
 }
@@ -71,12 +71,12 @@ function displayPersonalityNumber(name) {
     var calculated = calculatePersonalityNumber(name);
     var personalityNumber = reduceNum(calculated);
     if (calculated != personalityNumber) {
-        message = "your personality Number is: "+calculated+"/"+personalityNumber;
+        message = "your Personality Number is: "+calculated+"/"+personalityNumber;
     }
     else {
-        message = "your personality Number is: "+calculated;
+        message = "your Personality Number is: "+calculated;
     }
-    showExpression(reduceNumFinal(personalityNumber), "personality");
+    //showExpression(reduceNumFinal(personalityNumber), "personality");
     return message;
 }
 

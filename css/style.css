@@ -65,7 +65,7 @@ body {
     background-color: rgba(129, 129, 129, 0.15);
     backdrop-filter: blur(15px);
     text-align: center;
-    padding: 5% 5% 5% 5%;
+    padding: 2% 5% 1.2% 5%;
     color: white;
   }
 }
@@ -128,7 +128,7 @@ body {
     background-color: rgba(129, 129, 129, 0.15);
     backdrop-filter: blur(15px);
     text-align: center;
-    padding: 5% 5% 5% 5%;
+    padding: 5% 5% 2% 5%;
     color: white;
   }
 }

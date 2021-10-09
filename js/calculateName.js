@@ -38,11 +38,20 @@ function calculateVowelWord(word) {
     vowelWordSum = 0;
     vowelWordLeng = word.length;
     for(i=0; i<vowelWordLeng; i++){
-        letter = word.charAt(i)
-        if (isVowel(letter)){
+        letter = word.charAt(i);
+        y_condition = (i!=0)&&((letter=="y")||(letter=="ý")||(letter=="ỷ")||(letter=="ỳ")||(letter=="ỹ")||(letter=="ỵ"));
+        if (y_condition){
+            vowelWordSum = vowelWordSum;
+        }
+        else if (isVowelY(letter)){
             num = transformLetter2Num(word.charAt(i));
             vowelWordSum += num;
         }
+        
+        // if (isVowel(letter)){
+        //     num = transformLetter2Num(word.charAt(i));
+        //     vowelWordSum += num;
+        // }
     }
     if (checkMasterNumber(vowelWordSum)){
         return vowelWordSum;
@@ -58,7 +67,11 @@ function calculatePersonalityWord(word) {
     personalityWordLeng = word.length;
     for(i=0; i<personalityWordLeng; i++){
         letter = word.charAt(i)
-        if ( !isVowel(letter) ){
+        y_condition = (i==0)&&((letter=="y")||(letter=="ý")||(letter=="ỷ")||(letter=="ỳ")||(letter=="ỹ")||(letter=="ỵ"));
+        if (y_condition){
+            personalitySum = personalityWordSum;
+        }
+        else if ( !isVowel(letter) ){
             num = transformLetter2Num(word.charAt(i));
             personalityWordSum += num;
         }

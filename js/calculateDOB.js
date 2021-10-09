@@ -43,6 +43,6 @@ function displayMasterNumber(day, month, year) {
     else {
         message = "your Master Number is: "+calculated;
     }
-    showExpression(reduceNumFinal(masterNumber), "master");
+    //showExpression(reduceNumFinal(masterNumber), "master");
     return message;
 }

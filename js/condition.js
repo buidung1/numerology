@@ -112,6 +112,83 @@ function isVowel(letter){
         case "ũ":
         case "ủ":
         case "ụ":
+        // case "y":
+        // case "ý":
+        // case "ỳ":
+        // case "ỹ":
+        // case "ỷ":
+        // case "ỵ":
+            return true;
+            break;
+        default:
+            return false;
+            break;
+    }
+    return false;
+}
+
+function isVowelY(letter){
+    switch(letter) {
+        case "a":
+        case "â":
+        case "ă":
+        case "á":
+        case "ấ":
+        case "ắ":
+        case "à":
+        case "ầ":
+        case "ằ":
+        case "ã":
+        case "ẫ":
+        case "ẵ":
+        case "ả":
+        case "ẩ":
+        case "ẳ":
+        case "ạ":
+        case "ậ":
+        case "ặ":
+        case "e":
+        case "ê":
+        case "é":
+        case "ế":
+        case "è":
+        case "ề":
+        case "ẽ":
+        case "ễ":
+        case "ẻ":
+        case "ể":
+        case "ẹ":
+        case "ệ":
+        case "i":
+        case "í":
+        case "ì":
+        case "ĩ":
+        case "ỉ":
+        case "ị":
+        case "o":
+        case "ô":
+        case "ơ":
+        case "ó":
+        case "ố":
+        case "ớ":
+        case "ò":
+        case "ồ":
+        case "ờ":
+        case "õ":
+        case "ỗ":
+        case "ỡ":
+        case "ỏ":
+        case "ổ":
+        case "ở":
+        case "ọ":
+        case "ộ":
+        case "ợ":
+        case "u":
+        case "ú":
+        case "ù":
+        case "ũ":
+        case "ủ":
+        case "ụ":
         case "y":
         case "ý":
         case "ỳ":
@@ -126,7 +203,6 @@ function isVowel(letter){
     }
     return false;
 }
-
 
 function transformLetter2Num(letter) {
     switch(letter) {
